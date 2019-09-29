@@ -29,6 +29,7 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
+import ImageLink from './image-link';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -55,7 +56,8 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	Base64UploadAdapter
+	Base64UploadAdapter,
+	ImageLink
 ];
 
 // Editor configuration.
@@ -95,3 +97,4 @@ ClassicEditor.defaultConfig = {
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	language: 'ru'
 };
+
