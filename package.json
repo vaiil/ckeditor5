@@ -1,6 +1,6 @@
 {
   "name": "@vaiil/ckeditor5",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
     "ckeditor5-build",
@@ -88,5 +88,7 @@
       "pre-commit": "lint-staged"
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "@ckeditor/ckeditor5-engine": "^14.0.0"
+  }
 }
